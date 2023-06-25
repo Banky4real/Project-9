@@ -6,24 +6,27 @@
 
 ![JDk-Installation](./Images/jdk-installed.png)
 
-### TCP Port 80 Opened
-![TCP-Port80](./Images/TCP-port-80-opened-in-security-group.png)
-
-### Apache Load Balancer Installation and Enabling Module
+### Jenkins Installation
 `sudo apt update`
-`sudo apt install apache2 -y`
-`sudo apt-get install libxml2-dev`
+`sudo apt-get install jenkins`
 
+![Jenkins-Installation](./Images/Jenkins-Installation.png)
 
-`sudo a2enmod rewrite`
-`sudo a2enmod proxy`
-`sudo a2enmod proxy_balancer`
-`sudo a2enmod proxy_http`
-`sudo a2enmod headers`
-`sudo a2enmod lbmethod_bytraffic`
-![Enabling-Module-and-installing-apache-loadbalancer](./Images/Apache-load-balancer-and-module-enabling.png)
+### Jenkins Up and running
+`sudo systemctl status jenkins`
+![Making-sure-Jenkins-is-up-and-running](./Images/jenkins-up-and-running.png)
 
-### Apache status verified as running
-`sudo systemctl restart apache2`
-`sudo systemctl status apache2`
-![Apache-up-and-running](./Images/Apache-2-up-and-running.png)
+## Jenkins Initial Setup
+
+### Accessing jenkings from Browser
+`http://<Jenkins-Server-Public-IP-Address-or-Public-DNS-Name>:8080`
+![Accessing-Jenkins-from-Browser](./Images/Jenkins-accessed-from-Browser.png)
+
+`sudo cat /var/lib/jenkins/secrets/initialAdminPassword`
+![Retrieving-Jenkins-admin-default-password-from-Server](./Images/Jenkins-default-admin-password.png)
+
+### Suggested Plugin Installation
+![Installing-suggested-plugin](./Images/Installing-suggested-plugin.png)
+
+### Jenkins Setup Complete
+![Jenkins-setup-complete](./Images/jenkins-setup-complete.png)
