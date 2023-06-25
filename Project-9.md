@@ -30,3 +30,26 @@
 
 ### Jenkins Setup Complete
 ![Jenkins-setup-complete](./Images/jenkins-setup-complete.png)
+
+## Connecting Jenkins to Github to retrieve source Codes using Webhooks
+
+![successfully-enabled-webhooks](./Images/webhook-successfully-enabled-in-github-repository.png)
+
+### First Successful Jenkins Build
+![First-Jenkins-Build](./Images/Build-successful.png)
+
+### Console output for first build
+![Console-output](./Images/Console-output.png)
+
+### Post Build Action Configuration
+![New-Build-Triggered-after-postBuild-Action-configuration](./Images/new-build-triggered-after-changes-on-github-project.png)
+
+### Location of artifacts on Jenkins Server
+`ls /var/lib/jenkins/jobs/Project9/builds/2/archive/`
+![Artifacts-Location-on-Jenkins-server](./Images/Location-of-artifacts-on-jenkins-server.png)
+
+## Configuring jenkins to copy files to NFS Server Via SSH
+
+### Publish over SSH plugin Installation
+
+![publish-over-ssh-plugin-installation](./Images/publish-over-ssh-installed.png)
