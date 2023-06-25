@@ -53,3 +53,17 @@
 ### Publish over SSH plugin Installation
 
 ![publish-over-ssh-plugin-installation](./Images/publish-over-ssh-installed.png)
+
+### Configuring projects to copy artifacts over to NFS
+
+### Jenkins configured to send all files produced by build to mnt/apps
+
+![copying-artifacts-over-to-NFS](./Images/project-to-copy-artifacts-from-NFS-returned-success.png)
+
+### Console output after changes has been made to read-me
+
+![Console-output-after-changes-have-been-made-to-readme](./Images/new-job-triggered-by-webhook-after-changes-made-to-readme.png)
+
+### Making sure files are updated on NFS Server Successfully
+
+![files-updated-on-NFS-server-successfully](./Images/files-updated-on-NFSSERVER-successfully.png)
